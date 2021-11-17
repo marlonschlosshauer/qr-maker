@@ -1,5 +1,5 @@
 * Simple QR-code generator
 
-https://user-images.githubusercontent.com/24259317/142221774-2757dd0f-a2a3-4417-882f-a2202cb3bd87.png
+[[https://user-images.githubusercontent.com/24259317/142221774-2757dd0f-a2a3-4417-882f-a2202cb3bd87.png]]
 
 Link: https://marlonschlosshauer.github.io/qr-maker/
