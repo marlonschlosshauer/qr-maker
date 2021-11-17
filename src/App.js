@@ -4,7 +4,7 @@ import { useState } from "react";
 import './App.css';
 
 const App = () => {
-	const [text, setText] = useState();
+	const [text, setText] = useState('');
 	return (
 		<div className="App">
 			<div className="input-container">
