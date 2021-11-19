@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/qr-maker/static/css/main.dcfdee18.chunk.css",
-    "main.js": "/qr-maker/static/js/main.23a4dfd7.chunk.js",
-    "main.js.map": "/qr-maker/static/js/main.23a4dfd7.chunk.js.map",
+    "main.css": "/qr-maker/static/css/main.e8d83950.chunk.css",
+    "main.js": "/qr-maker/static/js/main.6394f1fd.chunk.js",
+    "main.js.map": "/qr-maker/static/js/main.6394f1fd.chunk.js.map",
     "runtime-main.js": "/qr-maker/static/js/runtime-main.e0a9e452.js",
     "runtime-main.js.map": "/qr-maker/static/js/runtime-main.e0a9e452.js.map",
-    "static/js/2.34b9d00b.chunk.js": "/qr-maker/static/js/2.34b9d00b.chunk.js",
-    "static/js/2.34b9d00b.chunk.js.map": "/qr-maker/static/js/2.34b9d00b.chunk.js.map",
+    "static/js/2.df254133.chunk.js": "/qr-maker/static/js/2.df254133.chunk.js",
+    "static/js/2.df254133.chunk.js.map": "/qr-maker/static/js/2.df254133.chunk.js.map",
     "index.html": "/qr-maker/index.html",
-    "static/css/main.dcfdee18.chunk.css.map": "/qr-maker/static/css/main.dcfdee18.chunk.css.map",
-    "static/js/2.34b9d00b.chunk.js.LICENSE.txt": "/qr-maker/static/js/2.34b9d00b.chunk.js.LICENSE.txt"
+    "static/css/main.e8d83950.chunk.css.map": "/qr-maker/static/css/main.e8d83950.chunk.css.map",
+    "static/js/2.df254133.chunk.js.LICENSE.txt": "/qr-maker/static/js/2.df254133.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e0a9e452.js",
-    "static/js/2.34b9d00b.chunk.js",
-    "static/css/main.dcfdee18.chunk.css",
-    "static/js/main.23a4dfd7.chunk.js"
+    "static/js/2.df254133.chunk.js",
+    "static/css/main.e8d83950.chunk.css",
+    "static/js/main.6394f1fd.chunk.js"
   ]
 }
