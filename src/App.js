@@ -29,7 +29,7 @@ const App = () => {
 				}} />
 			</div>
 			<div className="qr-container" ref={code}>
-				<QRCode className='qr-code' value={text} renderAs='svg' size={300} />
+				<QRCode className='qr-code' value={(text.length > 0) ? text : 'https://marlonschlosshauer.github.io/qr-maker/' } renderAs='svg' size={300} />
 			</div>
 			<div className="download-container">
 				<button className={`download-button ${(text.length > 0) ? 'active-button' : 'disabled-button'}`} onClick={download}>Download</button>
