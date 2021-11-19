@@ -1,12 +1,24 @@
 import QRCode from "qrcode.react";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { saveAs } from 'file-saver'
 
 import './App.css';
 
 const App = () => {
 	const [text, setText] = useState('');
+	const code = useRef();
 
 	useEffect(() => document.title = 'QR-maker', [])
+
+	const download = () => {
+		const image = code.current?.firstChild;
+		if (text.length > 0 && image) {
+			saveAs(new Blob(
+				[new XMLSerializer().serializeToString(image.cloneNode(true))],
+				{ type: 'image/svg+xml;charset=utf-8' }), 'qr-code.svg'
+			);
+		}
+	}
 
 	return (
 		<div className="App">
@@ -16,8 +28,11 @@ const App = () => {
 					setText(target.value)
 				}} />
 			</div>
-			<div className="qr-container">
-				<QRCode className='qr-code' value={text} renderAs='png' size={300} />
+			<div className="qr-container" ref={code}>
+				<QRCode className='qr-code' value={text} renderAs='svg' size={300} />
+			</div>
+			<div className="download-container">
+				<button className={`download-button ${(text.length > 0) ? 'active-button' : 'disabled-button'}`} onClick={download}>Download</button>
 			</div>
 		</div>
 	);

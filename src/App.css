@@ -1,18 +1,28 @@
 .App {
-  text-align: center;
-  display: grid;
-  justify-content: center;
-  grid-template-columns: 1fr;
-  grid-gap: 48px;
-  margin-top: 48px;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-gap: 48px;
+    margin-top: 48px;
 }
 
 .download-button {
     border: 0;
     border-radius: 16px;
+    width: 128px;
+    height: 32px;
+}
+
+.active-button {
     background-color: black;
     color: white;
-    width: 256px;
-    height: 48px;
+    cursor: pointer;
+}
+
+.disabled-button {
+    background-color: #dfdfdf;
+    color: #919191;
+    cursor: not-allowed;
 }
 
