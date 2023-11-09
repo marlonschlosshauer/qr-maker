@@ -3,7 +3,7 @@ import React from "react";
 import { Generator } from "../components/Generator/Generator";
 
 export default function Home({ searchParams }: any) {
-  const url = getURLFromSearchParams(searchParams);
+  const url = getURLFromSearchParams(searchParams, false);
   return (
     <div>
       <main className="flex min-h-screen flex-col items-center justify-between p-24">

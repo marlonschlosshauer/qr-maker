@@ -7,14 +7,17 @@ import { Input } from "../Input/Input";
 import { saveAs } from "file-saver";
 
 export interface GeneratorProps {
-  code: string;
+  code?: string | null;
 }
 
 export const Generator: React.FC<GeneratorProps> = ({ code }) => {
-  const [url, setUrl] = useState(code ?? "");
+  const [url, setUrl] = useState(
+    code ?? localStorage.getItem("prev") ?? process.env.BASE_URL ?? ""
+  );
   const ref = useRef<any>();
 
   const onDownload = () => {
+    localStorage.setItem("prev", url);
     const image = ref.current?.firstChild;
     if (url.length > 0 && image) {
       saveAs(
