@@ -12,7 +12,7 @@ export const Button: React.FC<PropsWithChildren<ButtonProps>> = ({
 }) => (
   <button
     disabled={disabled}
-    className={`w-full p-4 bg-purple-900 hover:bg-purple-700 text-gray-50 ${
+    className={`w-full p-4 text-gray-50 bg-gradient-to-r from-yellow-400 via-cyan-600 to-indigo-600 hover:opacity-60 transition-opacity ${
       disabled ? "cursor-not-allowed" : "cursor-pointer"
     }`}
     onClick={onClick}
