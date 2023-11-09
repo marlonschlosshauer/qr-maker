@@ -3,7 +3,7 @@ import { QRCodeSVG } from "qrcode.react";
 
 export const runtime = "edge";
 
-export default async function Image(request: any) {
+export async function GET(request: any) {
   const { searchParams } = request.nextUrl;
   const query = searchParams.get("q") ?? process.env.BASE_URL;
 

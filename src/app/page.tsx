@@ -19,5 +19,8 @@ export async function generateMetadata({ searchParams }: any) {
     title: q ? `URL: ${q}` : "Embed-One: QR Code Generator",
     description: "Easily generate, preview and download QR codes from urls.",
     keywords: ["QR", "code", "generation"],
+    openGraph: {
+      images: [`${process.env.BASE_URL}/api/og?q=${q}`],
+    },
   };
 }
